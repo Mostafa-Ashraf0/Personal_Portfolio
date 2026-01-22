@@ -1,0 +1,590 @@
+HOME PAGE – DESIGN SPEC (100vh)
+1) Page Container
+
+Max Width: 1200px
+
+Min Height: 100vh
+
+Horizontal Margin: auto (centered)
+
+Padding Top: 64px
+
+Padding Bottom: 64px
+
+Padding Left / Right: 24px
+
+2) Hero Section
+
+Height: 100vh
+
+Layout: Two Columns
+
+Columns Ratio: 1 / 1
+
+Gap Between Columns: 48px
+
+Vertical Alignment: Center
+
+3) Left Column (Personal Info)
+Avatar
+
+Width: 96px
+
+Height: 96px
+
+Border Radius: 12px
+
+Margin Bottom: 24px
+
+Name
+
+Font Size: 44px
+
+Font Weight: 700
+
+Line Height: 1.1
+
+Margin Bottom: 8px
+
+Job Title
+
+Font Size: 18px
+
+Font Weight: 500
+
+Opacity: 80%
+
+Margin Bottom: 6px
+
+Location
+
+Font Size: 14px
+
+Font Weight: 400
+
+Opacity: 60%
+
+Margin Bottom: 24px
+
+Bio / Description
+
+Font Size: 16px
+
+Font Weight: 400
+
+Line Height: 1.7
+
+Max Width: 520px
+
+Margin Bottom: 32px
+
+Action Buttons Row
+
+Layout: Horizontal
+
+Gap Between Buttons: 12px
+
+Button
+
+Height: 44px
+
+Padding Left / Right: 18px
+
+Font Size: 14px
+
+Font Weight: 500
+
+Border Radius: 10px
+
+4) Right Column
+
+Layout: Vertical Stack
+
+Gap Between Cards: 24px
+
+Education Card
+
+Width: 100%
+
+Padding: 20px
+
+Border Radius: 16px
+
+Education Title
+
+Font Size: 16px
+
+Font Weight: 600
+
+Margin Bottom: 8px
+
+Education Text
+
+Font Size: 14px
+
+Font Weight: 400
+
+Line Height: 1.6
+
+Opacity: 80%
+
+Skills Card
+
+Padding: 20px
+
+Border Radius: 16px
+
+Skills Container
+
+Layout: Wrap
+
+Gap: 8px
+
+Skill Badge
+
+Padding Vertical: 6px
+
+Padding Horizontal: 12px
+
+Font Size: 13px
+
+Font Weight: 500
+
+Border Radius: Full (Pill)
+
+5) Featured Projects Section
+
+Margin Top (from Hero): 64px
+
+Section Title
+
+Font Size: 28px
+
+Font Weight: 600
+
+Margin Bottom: 24px
+
+Projects Slider
+
+Card Width: 360px
+
+Gap Between Cards: 24px
+
+Project Card
+
+Border Radius: 16px
+
+Overflow: Hidden
+
+Project Image
+
+Height: 200px
+
+Object Fit: Cover
+
+Card Content
+
+Padding: 16px
+
+Project Title
+
+Font Size: 16px
+
+Font Weight: 600
+
+Margin Bottom: 4px
+
+Tech Stack Text
+
+Font Size: 13px
+
+Font Weight: 400
+
+Opacity: 70%
+
+Margin Bottom: 12px
+
+6) Flip Cards Section
+
+Margin Top: 48px
+
+Layout: 3 Columns
+
+Gap: 16px
+
+Flip Card
+
+Height: 80px
+
+Padding: 16px
+
+Border Radius: 14px
+
+Font Size: 14px
+
+Font Weight: 500
+
+7) GitHub Activity Section
+
+Margin Top: 64px
+
+Padding: 24px
+
+Border Radius: 16px
+
+Section Title
+
+Font Size: 20px
+
+Font Weight: 600
+
+Margin Bottom: 16px
+
+8) Typography Summary
+
+Main Heading: 44px / 700
+
+Section Heading: 28px / 600
+
+Card Title: 16px / 600
+
+Body Text: 16px / 400
+
+Small Text: 13–14px / 400–500
+
+9) Responsive Notes (لما تيجي تطبق)
+
+Tablet:
+
+Two columns → One column
+
+Center alignment
+
+Mobile:
+
+Page padding: 16px
+
+Name font size: 32px
+
+Cards: Full width
+
+لو حابب، الخطوة الجاية ممكن تكون:
+
+نفس Text Spec بس لصفحة
+Projects / Single Project / Experience / Blog / Contact
+
+أو أرتبهولك كـ README.md للبورتفوليو
+
+قولّي تحب نكمل بأنهي صفحة 👌
+
+flex not grid
+
+تمام 👍
+نظبطها Flex فقط – بدون Grid
+و برضه Text file واحد مرتب تمشي عليه حرفيًا.
+
+HOME PAGE – DESIGN SPEC (100vh)
+
+(FLEX LAYOUT ONLY)
+
+1) Page Container
+
+Max Width: 1200px
+
+Min Height: 100vh
+
+Margin: auto (center horizontally)
+
+Padding Top: 64px
+
+Padding Bottom: 64px
+
+Padding Left / Right: 24px
+
+Layout: Vertical (Flex Column)
+
+2) Hero Section (Top Section)
+
+Height: 100vh
+
+Layout: Flex Row
+
+Justify Content: space-between
+
+Align Items: center
+
+Gap Between Columns: 48px
+
+Hero يحتوي عمودين (Left + Right)
+
+3) Left Column (Personal Info)
+
+Width: 55%
+
+Layout: Flex Column
+
+Align Items: flex-start
+
+Avatar
+
+Width: 96px
+
+Height: 96px
+
+Border Radius: 12px
+
+Margin Bottom: 24px
+
+Name
+
+Font Size: 44px
+
+Font Weight: 700
+
+Line Height: 1.1
+
+Margin Bottom: 8px
+
+Job Title
+
+Font Size: 18px
+
+Font Weight: 500
+
+Opacity: 80%
+
+Margin Bottom: 6px
+
+Location
+
+Font Size: 14px
+
+Font Weight: 400
+
+Opacity: 60%
+
+Margin Bottom: 24px
+
+Bio / Description
+
+Font Size: 16px
+
+Font Weight: 400
+
+Line Height: 1.7
+
+Max Width: 520px
+
+Margin Bottom: 32px
+
+Action Buttons Row
+
+Layout: Flex Row
+
+Gap Between Buttons: 12px
+
+Button
+
+Height: 44px
+
+Padding Left / Right: 18px
+
+Font Size: 14px
+
+Font Weight: 500
+
+Border Radius: 10px
+
+4) Right Column (Education + Skills)
+
+Width: 45%
+
+Layout: Flex Column
+
+Gap Between Cards: 24px
+
+Align Items: stretch
+
+Education Card
+
+Width: 100%
+
+Padding: 20px
+
+Border Radius: 16px
+
+Education Title
+
+Font Size: 16px
+
+Font Weight: 600
+
+Margin Bottom: 8px
+
+Education Text
+
+Font Size: 14px
+
+Font Weight: 400
+
+Line Height: 1.6
+
+Opacity: 80%
+
+Skills Card
+
+Width: 100%
+
+Padding: 20px
+
+Border Radius: 16px
+
+Skills Badges Container
+
+Layout: Flex Row
+
+Flex Wrap: wrap
+
+Gap: 8px
+
+Skill Badge
+
+Padding Vertical: 6px
+
+Padding Horizontal: 12px
+
+Font Size: 13px
+
+Font Weight: 500
+
+Border Radius: Full (Pill)
+
+5) Featured Projects Section
+
+Margin Top: 64px
+
+Layout: Flex Column
+
+Section Title
+
+Font Size: 28px
+
+Font Weight: 600
+
+Margin Bottom: 24px
+
+Projects Slider
+
+Layout: Flex Row
+
+Gap Between Cards: 24px
+
+Overflow: Horizontal
+
+Project Card
+
+Width: 360px
+
+Border Radius: 16px
+
+Overflow: Hidden
+
+Flex: 0 0 auto
+
+Project Image
+
+Height: 200px
+
+Object Fit: Cover
+
+Project Card Content
+
+Padding: 16px
+
+Project Title
+
+Font Size: 16px
+
+Font Weight: 600
+
+Margin Bottom: 4px
+
+Tech Stack Text
+
+Font Size: 13px
+
+Font Weight: 400
+
+Opacity: 70%
+
+Margin Bottom: 12px
+
+6) Flip Cards Section
+
+Margin Top: 48px
+
+Layout: Flex Row
+
+Gap: 16px
+
+Flip Card
+
+Width: calc(33.333% - gap)
+
+Height: 80px
+
+Padding: 16px
+
+Border Radius: 14px
+
+Font Size: 14px
+
+Font Weight: 500
+
+7) GitHub Activity Section
+
+Margin Top: 64px
+
+Padding: 24px
+
+Border Radius: 16px
+
+Layout: Flex Column
+
+Section Title
+
+Font Size: 20px
+
+Font Weight: 600
+
+Margin Bottom: 16px
+
+8) Typography Summary
+
+Main Name: 44px — Weight 700
+
+Section Titles: 28px — Weight 600
+
+Card Titles: 16px — Weight 600
+
+Body Text: 16px — Weight 400
+
+Small Text: 13–14px — Weight 400–500
+
+9) Responsive Notes (Conceptual)
+
+Tablet:
+
+Hero Flex Direction → Column
+
+Left / Right Width → 100%
+
+Mobile:
+
+Page Padding: 16px
+
+Name Font Size: 32px
+
+Buttons Wrap
+
+Flip Cards Stack Vertically

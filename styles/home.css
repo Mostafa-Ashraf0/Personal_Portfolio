@@ -1,0 +1,18 @@
+.container{
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.main{
+    width: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.164);
+    height: 100%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
