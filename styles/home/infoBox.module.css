@@ -1,6 +1,15 @@
 .infoBox{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: space-between;
     padding: 24px;
+}
+
+.infoBox .eduSkills{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    display: flex;
 }

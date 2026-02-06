@@ -4,15 +4,20 @@ import locIcon from '../../../public/locationIcon.png';
 import Image from 'next/image';
 import LinkButton from './linkButton';
 import { linkBtns } from '@/app/features/linkBtns';
+import img from '../../../public/personal.jpg';
 const BasicInfo = ()=>{
     return(
         <div className={style.basicInfo}>
-            <div className={style.info}>
-                <h1 className={style.name}>Mostafa Ashraf</h1>
-                <h2 className={style.job}>Junior Software Engineer </h2>
-                <div className={style.locBox}>
-                    <Image src={locIcon} alt=""/>
-                    <h3 className={style.location}>Cairo, Egypt</h3>
+            <div className={style.mainInfo}>
+                <Image src={img} alt='img' className={style.pImage}/>
+                <div className={style.info}>
+                    <h1 className={style.name}>Mostafa Ashraf</h1>
+                    <h2 className={style.job}>Junior Software Engineer </h2>
+                    <div className={style.locBox}>
+                        <Image src={locIcon} alt=""/>
+                        <h3 className={style.location}>Cairo, Egypt</h3>
+                    </div>
+                    <p>Software engineer | Frontend developer | React.js | Vue.js | Building Modern, Responsive & High-Performance Web Applications</p>
                 </div>
             </div>
             <div className={style.btns}>

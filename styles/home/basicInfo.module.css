@@ -7,9 +7,22 @@
     gap: 10px;
 }
 
-.info{
+.basicInfo .mainInfo{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.mainInfo .pImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.aminInfo .info{
     display: flex;
     flex-direction: column;
+    height: 200px;
 }
 
 
@@ -45,7 +58,7 @@
 }
 
 .summaryBox{
-    max-width: 550px;
+    max-width: 600px;
 }
 
 .summaryBox p{
@@ -58,4 +71,5 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
 }

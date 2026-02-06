@@ -1,0 +1,51 @@
+.main{
+    width: 370px;
+    border: .5px solid #0000002a;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.main .head{
+    display: flex;
+    align-items: center;
+    border-bottom: .5px solid #0000002a;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.content .skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid #0000002a;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 15px;
+    color: #1f2933;
+    background-color: #0000000a;
+}
+
+.content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+

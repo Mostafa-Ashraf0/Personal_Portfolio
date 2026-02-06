@@ -1,0 +1,68 @@
+.main{
+    width: 100%;
+    padding: 0 24px 24px;
+    margin-bottom: 40px;
+}
+
+.main h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.leftBtn,
+.rightBtn{
+    width: 35px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: .5px solid #0000002a;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.leftBtn:hover,
+.rightBtn:hover{
+    background-color: #0000009a;
+}
+
+.leftBtn
+{
+    position: absolute;
+    top: 30px;
+    left: -24px;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.rightBtn{
+    position: absolute;
+    top: 30px;
+    right: -24px;
+    border-right: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
