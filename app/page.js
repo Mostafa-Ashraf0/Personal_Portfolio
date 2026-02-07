@@ -1,3 +1,4 @@
+
 import '../styles/home.css'
 import Image from 'next/image';
 import goodDay from '../public/good day.gif';
@@ -7,7 +8,9 @@ import Footer from './components/footer';
 import Container from './components/projects/container';
 import GithubHeatmap from './components/home/githubHeatmap';
 
+
 export default function Home() {
+
   return (
       <div className='container'>
         <Header/>
@@ -16,7 +19,6 @@ export default function Home() {
           <Container/>
           <div className='heatmap'>
             <h1>GitHub Activity</h1>
-            <GithubHeatmap/>
           </div>
           <Footer/>
         </div>

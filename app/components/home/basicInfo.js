@@ -4,7 +4,7 @@ import locIcon from '../../../public/locationIcon.png';
 import Image from 'next/image';
 import LinkButton from './linkButton';
 import { linkBtns } from '@/app/features/linkBtns';
-import img from '../../../public/personal.jpg';
+import img from '../../../public/personal.png';
 const BasicInfo = ()=>{
     return(
         <div className={style.basicInfo}>

@@ -1,4 +1,5 @@
 import style from '../../../styles/home/skills.module.css';
+import html from '../../../public/html.png';
 
 const Skills = ()=>{
     const skills = ['HTML','CSS','JS','React.Js','Vue.Js','Tailwind',
