@@ -2,7 +2,7 @@
 
 const getProjects = async()=>{
     try{
-        const res = await fetch(`http://localhost:1337/api/projects?populate=cover`);
+        const res = await fetch(`http://localhost:1337/api/projects?populate=*`);
         if (!res.ok) throw new Error('failed to load Projects');
         const data = await res.json();
         return data;

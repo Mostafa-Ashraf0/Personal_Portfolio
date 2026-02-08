@@ -430,6 +430,36 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiProjectSkillProjectSkill
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'project_skills';
+  info: {
+    displayName: 'project_skills';
+    pluralName: 'project-skills';
+    singularName: 'project-skill';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project-skill.project-skill'
+    > &
+      Schema.Attribute.Private;
+    project: Schema.Attribute.Relation<'manyToOne', 'api::project.project'>;
+    publishedAt: Schema.Attribute.DateTime;
+    skill: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   collectionName: 'projects';
   info: {
@@ -457,6 +487,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     project_description: Schema.Attribute.Text;
     project_name: Schema.Attribute.String;
+    project_skills: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project-skill.project-skill'
+    >;
     project_status: Schema.Attribute.Enumeration<
       ['InProgress', 'Completed', 'scheduled']
     >;
@@ -1016,6 +1050,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::project-skill.project-skill': ApiProjectSkillProjectSkill;
       'api::project.project': ApiProjectProject;
       'api::projects-image.projects-image': ApiProjectsImageProjectsImage;
       'plugin::content-releases.release': PluginContentReleasesRelease;

@@ -25,11 +25,12 @@ const ProjectCard = ({data})=>{
             height={120}
             unoptimized={true}
             />
-            
             <div className={style.info}>
                 <h2>{data.project_name}</h2>
                 <div className={style.skills}>
-                        <span>HTML</span>
+                        {data.project_skills.map(s=>(
+                            <span key={s.id}>{s.skill}</span>
+                        ))}
                 </div>
                 <span
                 className={style.status}

@@ -51,6 +51,12 @@
       "type": "integer",
       "required": true,
       "unique": true
+    },
+    "project_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-skill.project-skill",
+      "mappedBy": "project"
     }
   }
 }
