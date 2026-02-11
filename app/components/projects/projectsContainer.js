@@ -18,7 +18,12 @@ const ProjectsContainer = ()=>{
         },[projects])
     return(
         <div className={style.projectCards}>
-            
+            {projects?.sort((a, b) => a.key - b.key).map(p=>(
+                <ProjectBigCard
+                    key={p.id}
+                    data={p}
+                />
+            ))}
         </div>
     )
 }

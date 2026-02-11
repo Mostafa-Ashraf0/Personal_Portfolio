@@ -1,9 +1,7 @@
-
-
-.projects .projectCards{
+.projectCards{
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: stretch;
+    gap: 15px;
     flex-wrap: wrap;
 }

@@ -2,10 +2,14 @@
 import style from '../../../styles/projects/projectBigCard.module.css';
 import Image from 'next/image';
 import img from '../../../public/background.jpg';
-import { useEffect } from 'react';
+import rightArrow from '../../../public/right-arrow-white.png';
+import { useRouter } from 'next/navigation';
 
 const ProjectBigCard = ({data})=>{
-
+    const router = useRouter();
+    const handleClick =()=>{
+        router.push(`/projectDetails/${data.id}`);
+    }
     const statusColors = {
     Completed: "#17753a",
     InProgress: "#3B82F6",
@@ -22,18 +26,32 @@ const ProjectBigCard = ({data})=>{
             unoptimized={true}
             />
             <div className={style.info}>
-                <h2>{data.project_name}</h2>
-                <div className={style.skills}>
-                        {data.project_skills.map(s=>(
-                            <span key={s.id}>{s.skill}</span>
-                        ))}
+                <div className={style.text}>
+                    <h2>{data.project_name}</h2>
+                    <p>{data.project_description && data.project_description}</p>
                 </div>
-                <span
-                className={style.status}
-                style={{
-                    backgroundColor: statusColors[data.project_status],
-                }}  
-                >{data.project_status}</span>
+                <div className={style.buttom}>
+                    <div className={style.staBtn}>
+                        <span
+                        className={style.status}
+                        style={{
+                            backgroundColor: statusColors[data.project_status],
+                        }}  
+                        >{data.project_status}</span>
+                        <div className={style.Btns}>
+                            <span className={style.case} onClick={handleClick}>View Details</span>
+                            <span className={style.live}>
+                                <span></span>
+                                Live
+                                <Image 
+                                src={rightArrow}
+                                alt='arr'
+                                style={{width:'12px', height:'12px', marginLeft:'10px'}}
+                                />
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
