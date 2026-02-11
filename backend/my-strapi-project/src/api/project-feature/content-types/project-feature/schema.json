@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_features",
+  "info": {
+    "singularName": "project-feature",
+    "pluralName": "project-features",
+    "displayName": "project_features"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "project_features"
+    },
+    "feature": {
+      "type": "text"
+    }
+  }
+}

@@ -57,6 +57,12 @@
       "relation": "oneToMany",
       "target": "api::project-skill.project-skill",
       "mappedBy": "project"
+    },
+    "project_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-feature.project-feature",
+      "mappedBy": "project"
     }
   }
 }

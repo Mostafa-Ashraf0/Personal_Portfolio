@@ -1,0 +1,92 @@
+:root{
+    --main-color: #293665;
+    --btn-color:#303b6d;
+    --sec-color: #8d99ae;
+    --border: 0.5px solid rgba(0, 0, 0, 0.164);
+    --skillbg: #0000000a;
+}
+
+.main{
+    width: 100%;
+    padding: 24px;
+}
+
+.main .hero{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.main .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.title h1{
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.title p{
+    font-size: 16px;
+    color: var(--sec-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.title .btns{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.btns button{
+    padding: 7px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btns .github{
+    border: var(--border);
+    background-color: var(--skillbg);
+    transition: .5s ease;
+}
+
+.btns .github:hover{
+    background-color: white;
+}
+
+.btns .live{
+    background-color: var(--btn-color);
+    color: white;
+    transition: .5s ease;
+}
+
+.btns .live:hover{
+    background-color: var(--sec-color);
+}
+
+.main h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.main ul{
+    color: var(--sec-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 24px;
+}

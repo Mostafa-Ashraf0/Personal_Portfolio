@@ -430,6 +430,36 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiProjectFeatureProjectFeature
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'project_features';
+  info: {
+    displayName: 'project_features';
+    pluralName: 'project-features';
+    singularName: 'project-feature';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    feature: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project-feature.project-feature'
+    > &
+      Schema.Attribute.Private;
+    project: Schema.Attribute.Relation<'manyToOne', 'api::project.project'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProjectSkillProjectSkill
   extends Struct.CollectionTypeSchema {
   collectionName: 'project_skills';
@@ -486,6 +516,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     project_description: Schema.Attribute.Text;
+    project_features: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project-feature.project-feature'
+    >;
     project_name: Schema.Attribute.String;
     project_skills: Schema.Attribute.Relation<
       'oneToMany',
@@ -1050,6 +1084,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::project-feature.project-feature': ApiProjectFeatureProjectFeature;
       'api::project-skill.project-skill': ApiProjectSkillProjectSkill;
       'api::project.project': ApiProjectProject;
       'api::projects-image.projects-image': ApiProjectsImageProjectsImage;
