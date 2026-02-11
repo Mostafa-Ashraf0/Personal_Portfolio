@@ -1,4 +1,3 @@
-
 import '../styles/home.css'
 import Image from 'next/image';
 import goodDay from '../public/good day.gif';

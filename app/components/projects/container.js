@@ -20,9 +20,6 @@ const Container = ()=>{
         fetchProjects();
     },[]);
 
-    useEffect(()=>{
-        console.log(projects);
-    },[projects])
 
     const containerRef = useRef(null);
     const scrollLeft = () => {
