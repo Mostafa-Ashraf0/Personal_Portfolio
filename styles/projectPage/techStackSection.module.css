@@ -1,0 +1,41 @@
+:root{
+    --main-color: #293665;
+    --btn-color:#303b6d;
+    --sec-color: #8d99ae;
+    --border: 0.5px solid rgba(0, 0, 0, 0.164);
+    --skillbg: #0000000a;
+}
+
+.main{
+    width: 100%;
+    padding: 24px;
+}
+
+.main .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 100px;
+}
+
+.content .skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 15px;
+    color: var(--main-color);
+    background-color: #0000000a;
+}
+
+.main h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
