@@ -21,12 +21,16 @@
     padding-top: 70px;
 }
 
-.main .projects{
+.main .contact{
     padding: 24px;
 }
 
-.projects .head{
+.contact .head{
     margin-bottom: 20px;
+}
+
+.head h1{
+    font-size: 40px;
 }
 
 .head span{
@@ -36,4 +40,11 @@
 .head img{
     width: 10px;
     height: 10px;
+}
+
+.contact .body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }

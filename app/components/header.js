@@ -10,14 +10,17 @@ const Header = ()=>{
     const goToProjects = ()=>{
         router.push('/projects');
     }
+    const goToContact = ()=>{
+        router.push('/contact');
+    }
     return(
         <div className={style.header}>
             <span>M.A</span>
             <nav>
                 <ul>
-                    <li onClick={goToHome}>Home</li>
+                    <li onClick={goToHome} >Home</li>
                     <li onClick={goToProjects}>Projects</li>
-                    <li>Contact</li>
+                    <li onClick={goToContact}>Contact</li>
                     <li>Blog</li>
                 </ul>
             </nav>

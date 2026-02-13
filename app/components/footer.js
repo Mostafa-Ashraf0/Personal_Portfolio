@@ -10,7 +10,7 @@ const Footer = ()=>{
     const [howBoxV, setHowBoxV] = useState(false);
     const [theme, setTheme] = useState("light");
     const handleClick = ()=>{
-        setHowBoxV(true);
+        setHowBoxV(!howBoxV);
     }
     return(
         <div className={style.footer}>
