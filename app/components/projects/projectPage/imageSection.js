@@ -10,9 +10,13 @@ const ImageSection = ()=>{
     const [images, setImages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(()=>{
+        if(!projectId) return
         const fetchImages = async()=>{
         const res = await getProjectImages(projectId);
-        const urls = res.data[0].projects_images?.flatMap(img => img.image?.map(file => file.url) || []);
+        const urls = res?.data?.[0]?.projects_images?.flatMap?.(
+        img => img.image?.map(file => file.url) || []
+        ) || [];
+
         setImages(urls);
         }
         fetchImages();
@@ -31,14 +35,17 @@ const ImageSection = ()=>{
     }
 
     useEffect(()=>{
-        console.log(images)
-    },[images]);
+        if(currentIndex >= images?.length){
+            setCurrentIndex(0)
+        }
+    },[images, currentIndex]);
+
 
     
     return(
         <div className={style.main}>
             <div className={style.img}>
-                {images.length > 0 && images[currentIndex] && (
+                {images?.length > 0 && images[currentIndex] && (
                 <Image
                     src={`http://localhost:1337${images[currentIndex]}`}
                     alt={`Project image ${currentIndex + 1}`}
@@ -50,9 +57,9 @@ const ImageSection = ()=>{
                 )}
             </div>
             <div className={style.btns}>
-                <button onClick={handlePrev}>Prev</button>
-                <span>{currentIndex + 1} of {images.length}</span>
-                <button onClick={handeNext}>Next</button>
+                <button onClick={handlePrev} disabled={!images.length}>Prev</button>
+                <span>{images?.length>0?currentIndex + 1:0} of {images?.length}</span>
+                <button onClick={handeNext} disabled={!images.length}>Next</button>
             </div>
         </div>
     )

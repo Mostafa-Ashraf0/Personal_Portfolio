@@ -6,33 +6,34 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import rightArrow from '../../../public/right-arrow.png';
 import leftArrow from '../../../public/left-arrow.png';
-import { getProjects } from '@/app/features/getProjects';
 import { useEffect, useState } from 'react';
+import { getTools } from '@/app/features/getTools';
 
 const Container = ()=>{
-
-    const [projects, setProjects] = useState([]);
+    const [tools, setTools] = useState([]);
     useEffect(()=>{
-        const fetchProjects = async()=>{
-        const res = await getProjects();
-        setProjects(res.data);
+        const fetchTools = async()=>{
+        const res = await getTools();
+        setTools(res.data);
         };
-        fetchProjects();
+        fetchTools();
     },[]);
 
 
     const containerRef = useRef(null);
     const scrollLeft = () => {
-    containerRef.current.scrollBy({ left: -340, behavior: "smooth" });
+    containerRef.current.scrollBy({ left: -200, behavior: "smooth" });
     };
 
     const scrollRight = () => {
-        containerRef.current.scrollBy({ left: 340, behavior: "smooth" });
+        containerRef.current.scrollBy({ left: 200, behavior: "smooth" });
     };
+
+
 
     return(
         <div className={style.main}>
-            <h1>Projects</h1>
+            <h1>Tools and Tech Stack</h1>
             <div className={style.inner}>
                 <button onClick={scrollLeft} className={style.leftBtn}>
                     <Image 
@@ -42,10 +43,10 @@ const Container = ()=>{
                     />
                     </button>
                 <div className={style.container} ref={containerRef}>
-                    {projects?.sort((a, b) => a.key - b.key).map((p)=>(
+                    {tools?.sort((a, b) => a.key - b.key).map((t)=>(
                         <ProjectCard 
-                        key={p.id}
-                        data={p}
+                        key={t.id}
+                        data={t}
                         />
                     ))}
                 </div>

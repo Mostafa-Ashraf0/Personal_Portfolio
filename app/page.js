@@ -18,6 +18,7 @@ export default function Home() {
           <Container/>
           <div className='heatmap'>
             <h1>GitHub Activity</h1>
+            <GithubHeatmap/>
           </div>
           <Footer/>
         </div>
