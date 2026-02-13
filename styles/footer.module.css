@@ -1,4 +1,5 @@
 .footer{
+    position: relative;
     width: 100%;
     height: 70px;
     border-top: 0.5px solid rgba(0, 0, 0, 0.164);
@@ -14,18 +15,28 @@
     gap: 10px;
 }
 
+.left .me{
+    font-size: 15px;
+}
 
-.footer ul{
+.right{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer ul li{
-    list-style-type: none;
-    font-size: 16px;
-    font-weight: 500;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
+    padding: 5px 10px;
+    transition: .5s ease;
+    border-radius: 6px;
 }
 
+.right img{
+    width: 20px;
+    height: 20px;
+}
+
+.right:hover{
+    background-color: #1f2933;
+    color: white;
+}
