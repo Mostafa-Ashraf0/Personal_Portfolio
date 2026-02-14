@@ -1,16 +1,40 @@
-.main{
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     flex: 1;
+}
+
+.container .main{
+    width: 100%;
     height: 50px;
-    background-color: #25d36557;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid #25D366;
+    gap: 10px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.main:hover{
-    background-color: #25d3658a;
+.main.facebook{
+    background-color: #E7F3FF;
+    color: #1877F2;
+    border: 0.5px solid #1877F280;
+}
+
+.main.main.facebook:hover{
+    background-color: #1876f23b;
+    color: #FFFFFF;
+}
+
+.main.whatsapp{
+    background-color: #E6FFFA;
+    color:#075E54;
+    border: 0.5px solid #25D36680;
+}
+
+.container .main.whatsapp:hover{
+    color: #FFFFFF;
+    background-color: #25d36542;
 }

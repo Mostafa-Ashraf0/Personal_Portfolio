@@ -25,3 +25,24 @@
 .card h2{
     font-size: 15px;
 }
+
+
+@media (max-width: 992px) {
+    .card{
+    width: 120px;
+    display: flex;
+}
+
+
+.card .img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+
+
+.card h2{
+    font-size: 13px;
+}
+}

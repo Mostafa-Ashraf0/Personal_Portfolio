@@ -25,6 +25,7 @@ const ContactForm = ()=>{
                     <textarea name="message" rows="5" cols="30"/>
                 </div>
                 <button>Send Message</button>
+                <span style={{fontSize:'12px'}}>This message will be sent [mostafaashrof158@gmail.com]</span>
             </form>
         </div>
     )

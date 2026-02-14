@@ -52,3 +52,37 @@
   border-radius: 10px;
 }
 
+@media (max-width: 992px) {
+    .main{
+        width: 50%;
+        padding: 15px;
+    }
+
+    .main .content{
+    gap: 4px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+    .main .head{
+      font-size: 17px;
+    }
+    .content .skill{
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+}
