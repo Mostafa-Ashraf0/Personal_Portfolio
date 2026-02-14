@@ -430,6 +430,36 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiLinkLink extends Struct.CollectionTypeSchema {
+  collectionName: 'links';
+  info: {
+    displayName: 'links';
+    pluralName: 'links';
+    singularName: 'link';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    key: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::link.link'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface ApiProjectFeatureProjectFeature
   extends Struct.CollectionTypeSchema {
   collectionName: 'project_features';
@@ -1113,6 +1143,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::link.link': ApiLinkLink;
       'api::project-feature.project-feature': ApiProjectFeatureProjectFeature;
       'api::project-skill.project-skill': ApiProjectSkillProjectSkill;
       'api::project.project': ApiProjectProject;

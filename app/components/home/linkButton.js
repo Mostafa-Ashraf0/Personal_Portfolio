@@ -5,7 +5,12 @@ const LinkButton = ({icon, link, name})=>{
         <a 
         href={link}
         className={style.linkButton}>
-            <Image src={icon} alt=''/>
+            <Image 
+            src={`http://localhost:1337${icon}`} 
+            alt=''
+            width={0}
+            height={0}
+            />
             <span>{name}</span>
         </a>
     )
