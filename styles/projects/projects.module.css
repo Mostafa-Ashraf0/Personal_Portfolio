@@ -1,5 +1,5 @@
 .container{
-    min-height: 100vh;
+    min-height: 100vh ;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
@@ -65,3 +65,33 @@
 }
 }
 
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .container::after{
+        display: none;
+    }
+    .main{
+        border: none;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .head h1{
+        font-size: 22px;
+    }
+    .head span{
+    font-size: 11px;
+    }
+
+    .head img{
+        width: 6px;
+        height: 6px;
+    }
+}

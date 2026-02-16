@@ -71,3 +71,29 @@
 }
 
 }
+
+@media (max-width: 576px){
+    .main{
+      width: 100%;
+      padding: 15px;
+    }
+    .main .head{
+        font-size: 15px;
+    }
+    .content .logo{
+    width: 40px;
+    height: 40px;
+}
+
+.content .degree{
+    font-size: 12px;
+}
+
+.content .uni{
+    font-size: 14px;
+}
+
+.content .date{
+    font-size: 10px;
+}
+}

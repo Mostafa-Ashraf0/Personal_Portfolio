@@ -73,16 +73,14 @@
     padding: 4px 10px;
 }
 
-.content::-webkit-scrollbar {
-  width: 4px;
 }
 
-.content::-webkit-scrollbar-track {
-  background: #eee;
-}
-
-.content::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
+@media (max-width: 576px){
+    .main{
+      width: 100%;
+      padding: 15px;
+    }
+    .main .head{
+      font-size: 15px;
+    }
 }

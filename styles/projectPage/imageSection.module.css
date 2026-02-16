@@ -42,3 +42,15 @@
 .btns button:hover{
     background-color: white;
 }
+
+@media (max-width: 576px){
+    .main{
+        margin-bottom: 30px;
+    }
+    .btns button{
+        font-size: 12px;
+    }
+    .btns span{
+        font-size: 12px;
+    }
+}

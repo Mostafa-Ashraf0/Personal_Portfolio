@@ -50,3 +50,12 @@
 
 }
 }
+
+@media (max-width: 576px){
+    .main h2{
+        font-size: 16px;
+    }
+    .content .skill{
+        padding: 4px 10px;
+}
+}

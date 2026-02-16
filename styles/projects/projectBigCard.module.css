@@ -227,3 +227,55 @@
     }
 
 }
+
+@media (max-width: 768px){
+    .staBtn{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px){
+    .card{
+        width: 100%;
+        
+    }
+    .staBtn{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 576px){
+    .head h1{
+        font-size: 22px;
+    }
+    .head span{
+    font-size: 11px;
+    }
+
+    .head img{
+        width: 6px;
+        height: 6px;
+    }
+    .card h2{
+    font-size: 16px;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+    .staBtn .status,
+    .staBtn .Btns span{
+        padding: 4px;
+        font-size: 12px;
+    }
+    .staBtn .Btns .live{
+    width: 80px;
+}
+
+
+.card .info .status{
+    font-size: 10px;
+}
+
+}

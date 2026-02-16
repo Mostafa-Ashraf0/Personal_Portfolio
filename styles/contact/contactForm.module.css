@@ -69,3 +69,12 @@
     font-weight: 500;
 }
 
+
+
+
+@media (max-width: 768px){
+    .main{
+        width: 100%;
+    }
+}
+

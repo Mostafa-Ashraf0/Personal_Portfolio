@@ -74,3 +74,17 @@
 
 }
 }
+
+@media (max-width: 576px){
+    .main h1{
+      font-size: 16px;
+    }
+    .leftBtn,
+    .rightBtn{
+        width: 28px;
+        height: 35px;
+    }
+    .main .container{
+        gap: 10px;
+    }
+}

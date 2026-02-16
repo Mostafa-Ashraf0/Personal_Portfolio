@@ -110,3 +110,33 @@
 }
 
 }
+
+@media (max-width: 576px){
+    .main{
+        padding: 15px;
+    }
+    .main .hero{
+        flex-direction: column;
+    }
+    .hero .title{
+        width: 100%;
+    }
+    .btns button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .title h1{
+    font-size: 20px;
+    }
+
+    .title p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .main h2{
+        font-size: 16px;
+    }
+    .main ul{
+        font-size: 14px;
+    }
+}

@@ -19,7 +19,7 @@
     border-radius: 5px;
 }
 
-.aminInfo .info{
+.mainInfo .info{
     display: flex;
     flex-direction: column;
     height: 200px;
@@ -117,5 +117,56 @@
 
 .info p{
     font-size: 15px;
+}
+}
+
+@media (max-width: 576px){
+    .mainInfo .pImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.mainInfo .info{
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.name{
+    font-size: 25px;
+}
+
+.job{
+    font-size: 12px;
+}
+
+
+.locBox img{
+    width: 10px;
+    height: 10px;
+}
+
+.locBox{
+    margin-bottom: 10px;
+}
+
+.locBox .location{
+    font-size: 10px;
+}
+
+.basicInfo p{
+    font-size: 12px;
+}
+
+
+.summaryBox p{
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.btns{
+    width: 100%;
+    gap: 5px;
 }
 }

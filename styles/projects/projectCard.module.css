@@ -46,3 +46,22 @@
     font-size: 13px;
 }
 }
+
+@media (max-width: 576px){
+    .card{
+    flex-shrink: 0;
+    width: 100px;
+}
+
+
+.card .img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.card h2{
+    font-size: 12px;
+}
+}
