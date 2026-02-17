@@ -40,7 +40,7 @@ const ProjectBigCard = ({data})=>{
                         >{data.project_status}</span>
                         <div className={style.Btns}>
                             <span className={style.case} onClick={handleClick}>View Details</span>
-                            <span className={style.live}>
+                            <a className={style.live} href={data.live}>
                                 <span></span>
                                 Live
                                 <Image 
@@ -48,7 +48,7 @@ const ProjectBigCard = ({data})=>{
                                 alt='arr'
                                 style={{width:'12px', height:'12px', marginLeft:'10px'}}
                                 />
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>

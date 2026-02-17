@@ -63,6 +63,12 @@
       "relation": "oneToMany",
       "target": "api::project-feature.project-feature",
       "mappedBy": "project"
+    },
+    "live": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
     }
   }
 }
