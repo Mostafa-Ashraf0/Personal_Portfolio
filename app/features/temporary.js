@@ -23,11 +23,6 @@ focused on clean architecture, accessibility, and maintainable code.`,
             title:'Third Project',
             skills:['React.js','Css','Bootstrap','Supabase']
         },
-        {
-            img:'',
-            title:'Third Project',
-            skills:['React.js','Css','Bootstrap','Supabase']
-        },
     ]
 }
 
