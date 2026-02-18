@@ -1,3 +1,4 @@
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 const getProjectImages = async(id)=>{
     try{

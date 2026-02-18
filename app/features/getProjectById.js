@@ -1,7 +1,8 @@
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 const getProjectById = async(id)=>{
     try{
-        const res = await fetch(`http://localhost:1337/api/projects?filters[id][$eq]=${id}&populate=*`);
+        const res = await fetch(`${url}/api/projects?filters[id][$eq]=${id}&populate=*`);
         if (!res.ok) throw new Error('failed to load Projects');
         const data = await res.json();
         return data;
