@@ -16,7 +16,9 @@ const BasicInfo = ()=>{
         };
         fetchLinks();
     },[]);
-
+    useEffect(()=>{
+        console.log(links)
+    },[])
     return(
         <div className={style.basicInfo}>
             <div className={style.mainInfo}>
