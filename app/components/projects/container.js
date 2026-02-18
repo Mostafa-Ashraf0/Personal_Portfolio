@@ -14,7 +14,7 @@ const Container = ()=>{
     useEffect(()=>{
         const fetchTools = async()=>{
         const res = await getTools();
-        setTools(res.data);
+        setTools(res?.data);
         };
         fetchTools();
     },[]);

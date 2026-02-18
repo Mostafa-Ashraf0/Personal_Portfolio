@@ -12,7 +12,7 @@ const BasicInfo = ()=>{
     useEffect(()=>{
         const fetchLinks = async()=>{
         const res = await getLinks();
-        setLinks(res.data);
+        setLinks(res?.data);
         };
         fetchLinks();
     },[]);
