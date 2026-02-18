@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getProjectImages } from '@/app/features/getProjectImage';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 const ImageSection = ()=>{
     const {projectId} = useParams();
@@ -47,7 +48,7 @@ const ImageSection = ()=>{
             <div className={style.img}>
                 {images?.length > 0 && images[currentIndex] && (
                 <Image
-                    src={`http://localhost:1337${images[currentIndex]}`}
+                    src={`${url}${images[currentIndex]}`}
                     alt={`Project image ${currentIndex + 1}`}
                     width={0}
                     height={0}

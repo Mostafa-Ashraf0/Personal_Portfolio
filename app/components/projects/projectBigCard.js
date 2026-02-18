@@ -4,6 +4,7 @@ import Image from 'next/image';
 import img from '../../../public/background.jpg';
 import rightArrow from '../../../public/right-arrow-white.png';
 import { useRouter } from 'next/navigation';
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 const ProjectBigCard = ({data})=>{
     const router = useRouter();
@@ -19,7 +20,7 @@ const ProjectBigCard = ({data})=>{
         <div className={style.card}>
             <Image
             alt='img'
-            src={`http://localhost:1337${data.cover.url}`}
+            src={`${url}${data.cover.url}`}
             className={style.img}
             width={340}
             height={120}
