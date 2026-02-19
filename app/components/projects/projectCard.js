@@ -12,7 +12,7 @@ const ProjectCard = ({data})=>{
         <div className={style.card}>
             <Image
             alt='img'
-            src={`${url}${data.icon.url}`}
+            src={data.image_url}
             className={style.img}
             width={340}
             height={120}

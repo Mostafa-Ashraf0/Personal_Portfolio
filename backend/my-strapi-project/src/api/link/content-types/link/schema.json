@@ -31,6 +31,9 @@
       "type": "integer",
       "required": true,
       "unique": true
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }

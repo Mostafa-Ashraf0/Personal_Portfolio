@@ -15,7 +15,7 @@ const ImageSection = ()=>{
         const fetchImages = async()=>{
         const res = await getProjectImages(projectId);
         const urls = res?.data?.[0]?.projects_images?.flatMap?.(
-        img => img.image?.map(file => file.url) || []
+        img => img.image_url || []
         ) || [];
 
         setImages(urls);
@@ -48,7 +48,7 @@ const ImageSection = ()=>{
             <div className={style.img}>
                 {images?.length > 0 && images[currentIndex] && (
                 <Image
-                    src={`${url}${images[currentIndex]}`}
+                    src={`${images[currentIndex]}`}
                     alt={`Project image ${currentIndex + 1}`}
                     width={0}
                     height={0}

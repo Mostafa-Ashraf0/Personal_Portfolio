@@ -39,7 +39,7 @@ const BasicInfo = ()=>{
                     key={l.id}
                     link={l.url}
                     name={l.name}
-                    icon={l.icon.url}
+                    icon={l.image_url}
                     />
                 ))}
 

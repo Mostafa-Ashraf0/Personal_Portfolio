@@ -7,7 +7,7 @@ const LinkButton = ({icon, link, name})=>{
         href={link}
         className={style.linkButton}>
             <Image 
-            src={`${url}${icon}`} 
+            src={icon} 
             alt=''
             width={0}
             height={0}

@@ -445,6 +445,7 @@ export interface ApiLinkLink extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image_url: Schema.Attribute.String;
     key: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -537,6 +538,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     end_date: Schema.Attribute.Date;
     github: Schema.Attribute.String;
+    image_url: Schema.Attribute.String;
     key: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -591,6 +593,7 @@ export interface ApiProjectsImageProjectsImage
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    image_url: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -620,6 +623,7 @@ export interface ApiToolTool extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image_url: Schema.Attribute.String;
     key: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;

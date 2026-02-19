@@ -22,7 +22,7 @@ const LinkBox = ()=>{
                 href={l.url}
                 key={l.id}
                 className={`${style.main} ${style[l.name.toLowerCase()]}`}>
-                    <Image src={`http://localhost:1337${l.icon.url}`} alt='' width={20} height={20}/>
+                    <Image src={l.image_url} alt='' width={20} height={20}/>
                     {l.name}
                 </a>
             ))}

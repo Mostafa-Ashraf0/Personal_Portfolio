@@ -44,7 +44,7 @@
 }
 
 
-.btns button{
+.btns a{
     padding: 7px 14px;
     border: none;
     cursor: pointer;
@@ -54,11 +54,13 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
 }
 
 .btns .github{
     border: var(--border);
     background-color: var(--skillbg);
+    color: black;
     transition: .5s ease;
 }
 
@@ -121,7 +123,7 @@
     .hero .title{
         width: 100%;
     }
-    .btns button{
+    .btns a{
         padding: 5px 10px;
         font-size: 12px;
     }

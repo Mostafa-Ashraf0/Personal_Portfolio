@@ -85,7 +85,8 @@
 
 .skills .skill,
 .staBtn .status,
-.staBtn .Btns span{
+.staBtn .Btns span,
+.staBtn .Btns a{
     border-radius: 6px;
     align-items: center;
     font-weight: 400;
@@ -112,13 +113,15 @@
 }
 
 .staBtn .status,
-.staBtn .Btns span{
+.staBtn .Btns span,
+.staBtn .Btns a{
     border: .5px solid #0000002a;
     padding: 4px;
     font-size: 14px;
 }
 
-.staBtn .Btns span{
+.staBtn .Btns span,
+.staBtn .Btns a{
     border: .5px solid #0000002a;
 }
 
@@ -128,7 +131,8 @@
     gap: 10px;
 }
 
-.staBtn .Btns span{
+.staBtn .Btns span,
+.staBtn .Btns a{
     cursor: pointer;
 }
 
@@ -141,6 +145,8 @@
     margin: 0;
     background-color: #1E293B;
     color: white;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 .Btns .live span{
@@ -199,7 +205,8 @@
 
 
 .staBtn .status,
-.staBtn .Btns span{
+.staBtn .Btns span,
+.staBtn .Btns a{
     font-size: 12px;
 }
 
@@ -265,7 +272,8 @@
         font-size: 12px;
     }
     .staBtn .status,
-    .staBtn .Btns span{
+    .staBtn .Btns span,
+    .staBtn .Btns a{
         padding: 4px;
         font-size: 12px;
     }

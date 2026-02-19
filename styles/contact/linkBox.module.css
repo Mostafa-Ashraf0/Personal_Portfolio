@@ -21,6 +21,7 @@
     background-color: #E7F3FF;
     color: #1877F2;
     border: 0.5px solid #1877F280;
+    text-decoration: none;
 }
 
 .main.main.facebook:hover{
@@ -32,6 +33,7 @@
     background-color: #E6FFFA;
     color:#075E54;
     border: 0.5px solid #25D36680;
+    text-decoration: none;
 }
 
 .container .main.whatsapp:hover{
