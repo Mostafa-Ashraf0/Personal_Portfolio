@@ -50,10 +50,7 @@ const ImageSection = ()=>{
                 <Image
                     src={`${images[currentIndex]}`}
                     alt={`Project image ${currentIndex + 1}`}
-                    width={0}
-                    height={0}
-                    style={{ width: '100%', height: '100%', objectFit:'cover' }}
-                    unoptimized
+                    fill
                 />
                 )}
             </div>
